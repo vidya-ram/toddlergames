@@ -1,0 +1,46 @@
+.main_content{
+	position:relative;
+}
+
+.colour-display{
+  border: 2px solid #7b8f8e;
+  border-radius:7px;
+  float:left;
+  width:45%;
+}
+
+.colour-display>canvas{
+  width:33.33%;
+}
+
+@media(min-width:600px){
+.colour-display>canvas{
+	  width:25%;	
+}
+}
+
+.game-area{
+  float:right;
+  width:45%;
+  border: 2px solid #7b8f8e;
+  border-radius:7px;
+}
+
+.game-area div{
+	min-height:150px;
+}
+
+#myCanvas{
+   border-bottom: 2px solid #7b8f8e; /* changed */
+   width:100%;
+}
+
+#test_canvas{
+	width:100%;
+}
+
+#canvasDiv canvas:hover,
+#myCanvas canvas:hover,
+#test_canvas canvas:hover{
+   cursor: pointer;
+}

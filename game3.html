@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Toddler Fun Area | Games: Alphabets</title>
+  <meta name="Description" content="Preschool Learning Games For Kids. Games designed to stimulate their learning and memory skills.">
+  <meta name="Keywords" content="toddler, kids, online games, educational games, learning, learning for kids">
+  <meta name="Author" content="Vidya Ramakrishnan">
+  <meta property="fb:admins" content="525114057" />
+  <meta name="google-site-verification" content="zbogXOPXwvev4tRyqMj75yDAQYRhF3UjzFS-8RNly8M" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/mystylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/game3.css" media="screen">
+  
+  <!--[if IE]>    <html class="ie"> <![endif]-->
+  
+  <script type="text/javascript" src="java_script/jquery.js"></script>
+  <script type="text/javascript" src="java_script/game3.js"></script>
+</head>
+
+<body>
+
+ <div class="container cf">
+
+    <nav>
+      <ul class="side-nav">
+        <li><a href = "home.html" class="nav_home_img"><img src="images/bird.png" alt="Bird"></a></li>
+        <li><a href = "games.html"  class="nav_games_img"><img src="images/cat_nav.png" alt="Cat"></a></li>
+        <li><a href = "learning.html"  class="nav_learning_img"><img src="images/butterfly.png" alt="Butterfly"></a></li>
+        <li><a href = "me.html"  class="nav_me_img"><img src="images/sunflower.png" alt="Sunflower"></a></li>
+      </ul>
+    </nav>
+
+  <div class="main_content cf">
+
+    <h1>Alphabets</h1>
+    <p class="less-margin"><strong>Instructions</strong>: Click "Play" to start the game. Listen to the sound and identify the alphabet and choose from the list.</p>
+    <p class="less-margin">Click on "Speaker" icon to hear again.</p>
+    <p class="less-margin">Choose which case of alpahbets to displayed:</p>
+    <form id="alpha_type" class="on">
+        <input type="radio" name="letters" value="0" checked id="cl"><label for="cl">Capital Letters</label><br>
+        <input type="radio" name="letters" value="1" id="sl"><label for="sl">Small Letters</label>
+    </form>
+    <div class="button-box">
+      <button class="game-button transition" id="start">Play</button>
+      <button class="game-button off" id="clue">Clue !</button>
+      <div class="speaker-controls cf">
+        <p id="speaker" class="off icons icon-speaker"></p>
+      </div>
+    </div>
+        
+    <div id="alpha" class="off">
+    </div>
+    
+    <div id="win-img" class="off">
+      <img src ="images/win.png" alt = "Win" id="img1">
+    </div>
+    <div id="game-over-img" class="off">
+      <img src ="images/over.png" alt = "Game Over" id="img2">
+    </div>
+    
+    <audio preload="auto" id="audio_A">
+    <source src="audio/alpha/A.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_B">
+    <source src="audio/alpha/B.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_C">
+    <source src="audio/alpha/C.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_D">
+    <source src="audio/alpha/D.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_E">
+    <source src="audio/alpha/E.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_F">
+    <source src="audio/alpha/F.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_G">
+    <source src="audio/alpha/G.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_H">
+    <source src="audio/alpha/H.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_I">
+    <source src="audio/alpha/I.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_J">
+    <source src="audio/alpha/J.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_K">
+    <source src="audio/alpha/K.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_L">
+    <source src="audio/alpha/L.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_M">
+    <source src="audio/alpha/M.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_N">
+    <source src="audio/alpha/N.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_O">
+    <source src="audio/alpha/O.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_P">
+    <source src="audio/alpha/P.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_Q">
+    <source src="audio/alpha/Q.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_R">
+    <source src="audio/alpha/R.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_S">
+    <source src="audio/alpha/S.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_T">
+    <source src="audio/alpha/T.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_U">
+    <source src="audio/alpha/U.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_V">
+    <source src="audio/alpha/V.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_W">
+    <source src="audio/alpha/W.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_X">
+    <source src="audio/alpha/X.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_Y">
+    <source src="audio/alpha/Y.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_Z">
+    <source src="audio/alpha/Z.wav" type="audio/wav" />
+    </audio>
+  </div><!--eof main content-->
+</div><!--eof container-->
+</body>
+
+</html>

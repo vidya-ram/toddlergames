@@ -1,0 +1,53 @@
+h1,h2{
+	text-align:center;
+}
+
+
+#leftside-display div{
+	display:none;
+}
+
+#leftside-display div.active{
+	display:block;
+}
+
+#leftside-display div{
+	margin:20px 0 0;
+	text-align:center;
+}
+
+#leftside-display div img{
+	width:70%;
+	border:3px solid #7b8f8e;
+}
+
+h2{
+	font-size:20px;
+	color:#000;
+}
+
+@media(min-width:768px){
+h2{
+	font-size:40px;
+}	
+}
+
+#slide-indicator p img{
+	float:left;
+	width:19%;
+	border:3px solid #7b8f8e;
+	cursor:pointer;
+	opacity:0.7;
+	margin-right:1%;
+}
+
+@media(min-width:768px){
+#slide-indicator p img{
+	width:11.5%;
+	margin-right:1%;
+}	
+}
+
+#slide-indicator p.active img{
+	opacity:1;
+}

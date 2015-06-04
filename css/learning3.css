@@ -1,0 +1,85 @@
+h1{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+#leftside-display div{
+	display:none;
+	width:60%;
+	height:200px;
+	position:relative;
+	margin:0 auto;
+	color:black;
+}
+
+#leftside-display div.active{
+	display:block;	
+}
+
+h2{
+	margin:0;
+	position:absolute;
+	bottom:-40px;
+	width:100%;
+	text-align:center;
+}
+
+#slide-indicator{
+	margin-top:80px;
+}
+
+#slide-indicator p{
+	float:left;
+	width:19%;
+	height:50px;
+	border:3px solid #333;
+	cursor:pointer;
+	opacity:0.7;
+	margin-right:1%;
+}
+
+@media(min-width:768px){
+#slide-indicator p{
+	width:11.5%;
+	margin-right:1%;
+}	
+}
+
+
+#slide-indicator p.active img{
+	opacity:1;
+}
+
+.blue{
+	background-color:blue;
+}
+.yellow{
+	background-color:yellow;
+}
+.green{
+	background-color:green;
+}
+.orange{
+	background-color:orange;
+}
+.purple{
+	background-color:purple;
+}
+.brown{
+	background-color:brown;
+}
+.pink{
+	background-color:pink;
+}
+.black{
+	background-color:black;
+}
+.white{
+	background-color:white;
+}
+.grey{
+	background-color:grey;
+}
+.beige{
+	background-color:beige;
+}

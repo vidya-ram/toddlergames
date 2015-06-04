@@ -1,0 +1,54 @@
+h1{
+	text-align:center;
+	margin-bottom:50px;
+}
+
+#cat{
+	display:none;
+}
+
+h2{
+	color:#000;
+}
+
+@media(min-width:768px){
+#cat{
+	display:block;
+	float:left;
+	width:150px;
+}
+
+h2{
+	text-align:left;
+}
+
+}
+
+#leftside-display div{
+	display:none;
+	text-align:center;
+}
+
+@media(min-width:480px){
+#leftside-display div{
+	float:left;
+}
+}
+
+#leftside-display div.active{
+	display:block;
+}
+
+#slide-indicator p img{
+	float:left;
+	width:13.2%;
+	border:3px solid #7b8f8e;
+	background-color:lightblue;
+	cursor:pointer;
+	opacity:0.7;
+	margin-right:1%;
+}
+
+#slide-indicator p.active img{
+	opacity:1;
+}

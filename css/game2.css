@@ -1,0 +1,57 @@
+.main_content{
+	position:relative;
+	min-height:640px;
+}
+
+.display-shapes{
+  border: 2px solid #7b8f8e;
+  border-radius:7px;
+}
+
+@media (min-width:768px){
+.display-shapes{
+  float:left;
+  width:60%;
+}
+}
+
+.shapes{
+  width:48%;
+  margin-top:10px;
+  margin-left:1%;
+  float:left;
+}
+
+.shapes canvas{
+  width:100%;
+  cursor:pointer;
+}
+
+#test{
+	text-align:center;
+	margin-bottom:10px;
+}
+
+#test img{
+	width:50%;
+}
+
+@media (min-width:768px){
+#test{
+  float:right;
+  width:35%;
+}
+#test img{
+	width:100%;
+}
+}
+
+.controls{
+	margin-bottom:0;
+}
+.icon-speaker:before{
+	font-size:40px;
+	margin-left:20px;
+	margin-bottom:0;
+}
+

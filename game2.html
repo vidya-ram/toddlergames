@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Toddler Fun Area | Games: Shapes</title>
+  <meta name="Description" content="Preschool Learning Games For Kids. Games designed to stimulate their learning and memory skills.">
+  <meta name="Keywords" content="toddler, kids, online games, educational games, learning, learning for kids">
+  <meta name="Author" content="Vidya Ramakrishnan">
+  <meta property="fb:admins" content="525114057" />
+  <meta name="google-site-verification" content="zbogXOPXwvev4tRyqMj75yDAQYRhF3UjzFS-8RNly8M" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/mystylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/game2.css" media="screen">
+  
+  <!--[if IE]>    <html class="ie"> <![endif]-->
+  
+  <script type="text/javascript" src="java_script/jquery.js"></script>
+  <script type="text/javascript" src="java_script/game2.js"></script>
+</head>
+
+<body>
+
+ <div class="container cf">
+
+    <nav>
+      <ul class="side-nav">
+        <li><a href = "home.html" class="nav_home_img"><img src="images/bird.png" alt="Bird"></a></li>
+        <li><a href = "games.html"  class="nav_games_img"><img src="images/cat_nav.png" alt="Cat"></a></li>
+        <li><a href = "learning.html"  class="nav_learning_img"><img src="images/butterfly.png" alt="Butterfly"></a></li>
+        <li><a href = "me.html"  class="nav_me_img"><img src="images/sunflower.png" alt="Sunflower"></a></li>
+      </ul>
+    </nav>
+
+  <div class="main_content cf">
+    <h1>Shapes</h1>   
+    <p class="note"><strong>Instructions</strong>: Click "Play" to start the game. Identify the shape of the item and choose the correct shape from the list.</p>
+    <div class="button-box">
+      <button class="game-button transition" id="start">Play</button>
+      <button class="game-button off" id="clue">Clue !</button>
+      <div class="speaker-controls cf">
+        <p id="speaker" class="off icons icon-speaker"></p>
+      </div>
+    </div>
+    
+    <div id="test" class="off">
+      <a href="" target="_blank"><img src="" alt="Shape"></a>
+    </div>
+    
+    <div class="display-shapes cf">
+      <div class="shapes"><canvas id="square"></canvas></div>
+      <div class="shapes"><canvas id="rectangle"></canvas></div>
+      <div class="shapes"><canvas id="triangle"></canvas></div>
+      <div class="shapes"><canvas id="circle"></canvas></div>
+      <div class="shapes"><canvas id="oval"></canvas></div>
+    </div>
+    
+    <div id="win-img" class="off">
+      <img src ="images/win.png" alt = "image" id="img1">
+    </div>
+    <div id="game-over-img" class="off">
+      <img src ="images/over.png" alt = "image" id="img2">
+    </div>
+    
+    <audio preload="auto" id="audio_square" class="audio">
+    <source src="audio/shapes/square.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_rectangle" class="audio">
+    <source src="audio/shapes/rectangle.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_triangle" class="audio">
+    <source src="audio/shapes/triangle.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_circle" class="audio">
+    <source src="audio/shapes/circle.wav" type="audio/wav" />
+    </audio>
+    
+    <audio preload="auto" id="audio_oval" class="audio">
+    <source src="audio/shapes/oval.wav" type="audio/wav" />
+    </audio>
+  </div><!--eof main content-->
+</div><!--eof container-->
+</body>
+
+</html>
+

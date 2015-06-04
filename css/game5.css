@@ -1,0 +1,30 @@
+.main_content{
+	min-height:600px;
+}
+
+#display img{
+   width:20%;
+   margin:1%;
+}
+
+#number{
+  clear:both;
+}
+
+#number canvas{
+  cursor: pointer;
+  opacity:0.7;
+  margin:10px;
+}
+
+#number canvas:hover{
+  opacity:1;
+} 
+
+#number canvas:active{
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
+  -ms-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
