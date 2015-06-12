@@ -11,7 +11,7 @@
 
 body {
 	background: url(../images/bck.jpg) no-repeat;
-	background-size: 200% 200%;
+	background-size: 200vh;
 	font:14px/1.5em Verdana, Geneva, sans-serif;
 	color:#444;
 }
@@ -19,6 +19,7 @@ body {
 @media (min-width:1024px) {
 body {
 	background-size: 100vw 100vh;
+	background-repeat: repeat;
  }
 }
 
@@ -153,7 +154,7 @@ a img {
 
 .main_content{
 	clear: both;
-	margin:0 auto;
+	margin:0 auto 3%;
 	width:95%;
 	padding:2% 5%;
 	border:3px solid #7b8f8e;
