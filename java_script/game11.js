@@ -35,8 +35,7 @@ $(document).ready(function()
 	var wait_time = 2500;
 	var testState = -1;
 	var counter = 0;
-	center = { x: 0, y: 0};
-	timer = false;
+	var timer = false;
 
 	$("#india").rwdImageMaps();
 
@@ -61,6 +60,7 @@ $(document).ready(function()
 	$("map[name=indiamap] area").click(function (event) {
 		event.preventDefault();
 		if(testState !== -1) {
+			var center = getCenterPolygon($(this).attr("coords"))
 			if ($(this).attr("id") == states[testState]["state"]) {
 				var state = testState;
 				testState = -1;
@@ -89,7 +89,7 @@ $(document).ready(function()
 
 	$("map[name=indiamap] area").mouseover(function () {
 		if(testState !== -1) {
-		  	var coords = $(this).attr('coords');
+		  	var coords = $(this).attr("coords");
 	    	drawCanvasOnHoverArea(coords);
     	}
 	});
@@ -137,32 +137,43 @@ function audio_play(id)
      }
 }
 
-function drawCanvasOnHoverArea(coords) {
+function getCenterPolygon(coords) {
     var coordsArray = coords.split(',');
-    var canvasContext = document.getElementById("hovercanvas").getContext('2d');
-
-    canvasContext.beginPath();
-    canvasContext.moveTo(coordsArray[0], coordsArray[1]);
     var x = 0;
     var y = 0;
-    for (var i = 2; i < coordsArray.length-1; i += 2) {
-    	x += parseInt(coordsArray[i],10);
-    	y += parseInt(coordsArray[i+1], 10);
-        canvasContext.lineTo(coordsArray[i], coordsArray[i+1]);
-    }
-    center.x = x/(coordsArray.length/2);
-    center.y = y/(coordsArray.length/2);
+    var center = { x: 0, y: 0};
     var left = $("#hovercanvas").offset().left;
     var canvasLeft = left + 100;
     var canvasRight = left + $("#hovercanvas").width() - 100;
-    var pointLeft = left + center.x
+    var pointLeft;
+
+    for (var i = 2; i < coordsArray.length-1; i += 2) {
+    	x += parseInt(coordsArray[i],10);
+    	y += parseInt(coordsArray[i+1], 10);
+    }
+    center.x = x/(coordsArray.length/2);
+    center.y = y/(coordsArray.length/2);
+    pointLeft = left + center.x
+
     //To avoid text being cut by canvas corners.
     if(pointLeft < canvasLeft) {
     	center.x += 50;
     } 
     else if (pointLeft > canvasRight) {
     	center.x -= 50;
-	}
+	}	
+	return center;
+}
+
+function drawCanvasOnHoverArea(coords) {
+    var coordsArray = coords.split(',');
+    var canvasContext = document.getElementById("hovercanvas").getContext('2d');
+
+    canvasContext.beginPath();
+    canvasContext.moveTo(coordsArray[0], coordsArray[1]);
+    for (var i = 2; i < coordsArray.length-1; i += 2) {
+        canvasContext.lineTo(coordsArray[i], coordsArray[i+1]);
+    }
     canvasContext.lineTo(coordsArray[0], coordsArray[1]);
     canvasContext.fill();
     canvasContext.stroke();
