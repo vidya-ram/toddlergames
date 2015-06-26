@@ -112,7 +112,8 @@ $(document).ready(function()
 			$(".blackboard").hide();
 			testState = -1;
 			$("#game-over-img").show(wait_time).delay(wait_time).hide(wait_time, function() {
-				$(".blackboard").html('<a href="game11.html">Restart</a>').show();
+				$(".blackboard").html('Restart');
+				$(".blackboard").wrap('<a href="game11.html"></a>').show();
 			});
 		}
 		else {
