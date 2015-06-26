@@ -10,7 +10,7 @@
 }
 
 body {
-	background: url(../images/bck.jpg) no-repeat;
+	background: url(../images/bck.jpg);
 	background-size: 200vh;
 	font:14px/1.5em Verdana, Geneva, sans-serif;
 	color:#444;
