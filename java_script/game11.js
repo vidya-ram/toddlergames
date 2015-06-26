@@ -39,7 +39,8 @@ $(document).ready(function()
 
 	$("#india").rwdImageMaps();
 
-	$("#india").load(function() {
+	$(window).load(function() {
+		$("#loadingtxt").hide();
 		$("#start").show();
 	});
 
